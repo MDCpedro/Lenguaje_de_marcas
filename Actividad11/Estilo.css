@@ -1,0 +1,23 @@
+
+h1 {
+    background-color: #444; font-family: monospace; color:white; text-align: center;
+}
+
+h3 {
+    font-style: bold; color:blue
+}
+
+img {
+    width: 100px; float: top;
+}
+
+.noticia {
+    margin-left: 20px; font-family: monospace; margin-top: 20px;
+}
+
+a {
+    color: green;
+}
+a:hover {
+    color: purple;
+}
