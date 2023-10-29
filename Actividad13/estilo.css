@@ -1,0 +1,38 @@
+body {
+    background-color: #f0ecba;
+}
+
+h1 {
+    font-style: bold;
+}
+
+h2 {
+    font-style: bold;
+}
+
+main {
+    background-color: beige; float:left; padding-left: 10px;  width: 85%; padding-bottom: 10px;
+}
+
+nav {
+    background-color: rgb(247, 247, 229); float: left; width: 10%;
+}
+
+p {
+    margin-top: 5px; font-size: large; padding-right: 10px; padding-right: 10px;
+}
+ul {
+    list-style-type: none; padding-left: 10px;
+}
+li {
+    padding-top: 5px;
+}
+footer {
+    float: left; background-color: #d6be9b; text-align: center; padding-top: 20px; padding-bottom: 20px; width: 100%;
+}
+section {
+    float: left; width: 200px; margin: 10px; text-align: center; border: 3px solid#b19b79; height: 400px;
+}
+section img {
+    width: 90%; padding: 10px;
+}
