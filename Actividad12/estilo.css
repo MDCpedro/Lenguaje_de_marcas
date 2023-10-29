@@ -11,13 +11,22 @@ h2 {
 }
 
 main {
-    background-color: beige; float:right; margin-top: 50px;
+    background-color: beige; float:left; padding-left: 10px;  width: 85%;
 }
 
 nav {
-    background-color: rgb(247, 247, 229); float: left;
+    background-color: rgb(247, 247, 229); float: left; padding-right: 30px; 
 }
 
 p {
-    margin-top: 5px; font-size: large; margin-right: 10px;
+    margin-top: 5px; font-size: large; padding-right: 10px; padding-right: 10px;
+}
+ul {
+    list-style-type: none; padding-left: 10px;
+}
+li {
+    padding-top: 5px;
+}
+footer {
+    float: left; background-color: #d6be9b; text-align: center; padding-top: 20px; padding-bottom: 20px; width: 100%;
 }
