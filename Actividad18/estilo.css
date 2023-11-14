@@ -1,0 +1,49 @@
+body {
+    font-family: monospace;
+}
+
+@media screen and (max-width: 600px) {
+    .especial {
+      background-color: rgb(240, 128, 128);
+    }
+    .pnumero::after {
+        content: "600px";
+    }
+  }
+
+@media screen and (max-width: 900px) and (min-width:600px){
+    .especial {
+      background-color: rgb(128, 236, 240);
+    }
+    .pnumero::after {
+        content: "1200px";
+    }
+  }
+
+
+@media screen and (max-width: 1200px) and (min-width:900px){
+    .especial {
+      background-color: rgb(240, 232, 128);
+    }
+    .pnumero::after {
+        content: "1200px";
+    }
+  }
+
+@media screen and (max-width: 1500px) and (min-width:1200px){
+    .especial {
+      background-color: rgb(132, 240, 128);
+    }
+    .pnumero::after {
+        content: "1500px";
+    }
+  }
+
+@media screen and (max-width: 999999px) and (min-width:1500px){
+    .especial {
+      background-color: rgb(255, 255, 255);
+    }
+    .pnumero::after {
+        content: "∞";
+    }
+  }
