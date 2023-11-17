@@ -1,0 +1,27 @@
+header {
+    background-color: rgb(0, 119, 255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial;
+    padding-right: 20px;
+    padding-left: 20px;   
+}
+
+.word_space {
+    word-spacing: 8px;
+}
+div{
+    align-self: center;
+}
+@media screen and (max-width: 1024px) and (min-width: 430px) {
+    .Header_Tablet {
+        display: none;
+    }
+    div::after {
+        content: "☰";
+        font-size: 40px;
+    }
+}
+
