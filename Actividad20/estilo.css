@@ -12,16 +12,76 @@ header {
 .word_space {
     word-spacing: 8px;
 }
-div{
+.Menu{
     align-self: center;
 }
+
+.columna {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.paragrafo_intro  {
+    width: 500px;
+}
+
+.img1 {
+    width: 600px;
+}
+
+.borde_redondo {
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 430px) {
     .Header_Tablet {
         display: none;
     }
-    div::after {
+    .Menu::after {
         content: "☰";
         font-size: 40px;
     }
+    .paragrafo_intro {
+        width: 250px;
+    }
+    .img1 {
+        width: 450px;
+    }
+    .columna {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
 }
 
+@media screen and (max-width: 430px) {
+    .Header_Tablet {
+        display: none;
+    }
+    .formMovil {
+        display: none;
+    }
+    .Menu::after {
+        content: "☰";
+        font-size: 40px;
+    }
+    .paragrafo_intro {
+        width: 340px;
+        text-align: center;
+    }
+    .img1 {
+        width: 340px;
+    }
+    .columna {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
