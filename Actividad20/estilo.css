@@ -9,6 +9,11 @@ header {
     padding-left: 20px;   
 }
 
+body {
+    font-family: Arial;
+    color: rgb(41, 41, 41)
+}
+
 .word_space {
     word-spacing: 8px;
 }
@@ -17,29 +22,81 @@ header {
 }
 
 .columna {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .div1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 70px;
 }
 
 .paragrafo_intro  {
-    width: 500px;
+    width: 600px;
 }
 
 .img1 {
     width: 600px;
 }
 
+.titulo {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    
+}
+
+.articulos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin-top: 30px;
+}
+
+.articulo_servicios {
+    width: 180px;
+    height: 250px;
+    text-align: center;
+    padding: 30px;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+.img2 {
+    width: 35%;
+}
+
+.texto_azul {
+    color: rgb(0, 119, 255);
+}
+
 .borde_redondo {
     border-radius: 10px;
+}
+
+.sombra {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.articulo_portfolio {
+    width: 350px;
+    height: 470px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img3 {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
 @media screen and (max-width: 1024px) and (min-width: 430px) {
@@ -51,14 +108,14 @@ header {
         font-size: 40px;
     }
     .paragrafo_intro {
-        width: 250px;
+        width: 300px;
     }
     .img1 {
-        width: 450px;
+        width: 400px;
     }
     .columna {
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }
 
