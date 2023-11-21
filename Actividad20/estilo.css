@@ -109,14 +109,20 @@ body {
 .texto_centro {
     text-align: center;
 }
-
 .margen_top {
     margin-top: 50px;
 }
-
+.margen_bot {
+    margin-bottom: 50px;
+}
 .columna2 {
-    margin-left: 240px;
-    margin-right: 240px;
+    margin-left: 440px;
+    margin-right: 440px;
+}
+
+.columna3 {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .negrita {
@@ -175,6 +181,26 @@ ul {
     background-color: rgb(43, 43, 43);
 }
 
+.img4 {
+    width: 25px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.color_morado {
+    color: purple;
+    padding-left: 5px;
+}
+
+.creditos {
+    display: flex;
+    justify-content: center;
+}
+
+.paddings_footer {
+    margin: 0px;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 430px) {
     .Header_Tablet {
         display: none;
@@ -192,6 +218,14 @@ ul {
     .columna {
         margin-left: 100px;
         margin-right: 100px;
+    }
+    .columna2 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .fondo_gris {
+        padding-left: 20px;
+        padding-right: 60px;
     }
 }
 
@@ -217,4 +251,16 @@ ul {
         margin-left: 30px;
         margin-right: 30px;
     }
+    .articulos2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .fondo_gris {
+        padding:10px;
+    }
+    .paddings_footer {
+        padding-left: 50px;
+        padding-right: 50px ;
+    }
+    
 }
