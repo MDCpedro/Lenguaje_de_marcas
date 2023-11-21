@@ -10,6 +10,12 @@ header {
 .fondo_gris_claro {
     background-color: rgb(219, 219, 219);
 }
+.padding_bot {
+    padding-bottom: 20px;
+} 
+.padding_top {
+    padding-top: 10px;
+}
 
 .color_blanco {
     color: white;
@@ -102,6 +108,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     transition: transform 0.5s;
+    background-color: white;
 }
 .articulo_portfolio:hover {
     transform: scale(1.05);
