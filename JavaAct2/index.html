@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Actividad21</title>
+</head>
+<body>
+    <div>
+        <p class="texto">
+            TEXTO
+        </p>
+        <button onclick="SizePeque()">Pequeño</button>
+        <button onclick="SizeMediano()">Mediano</button>
+        <button onclick="SizeGrande()">Grande</button>
+    </div>
+<script>
+    function SizePeque () {
+    let texto = document.querySelector(".texto");
+    texto.style.fontSize = "small";
+}
+    function SizeGrande() {
+    let texto = document.querySelector(".texto");
+    texto.style.fontSize = "100px"
+}
+
+    function SizeMediano() {
+    let texto = document.querySelector(".texto");
+    texto.style.fontSize = ""
+}
+</script>
+</body>
+</html>

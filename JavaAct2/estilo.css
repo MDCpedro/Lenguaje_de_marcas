@@ -1,0 +1,19 @@
+.texto {
+    font-size: 50px;
+    transition: font-size 0.5s ease;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    width: 200px;
+}
