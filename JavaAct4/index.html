@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Actividad21</title>
+</head>
+
+<body>
+
+    <p id="texto">El primer botó traduirà el text d'un paràgraf específic: substituirà el contingut per la versió en
+        l'altre
+        idioma. Ha de funcionar en ambdós sentits.
+        És a dir, si el text està en l'idioma A, el passarà al B, i si està en l'idioma B, el passarà a l'A.</p>
+    <button id="boton_traduccion">Traducir Texto</button>
+    <button id="boton_color">Cambio de color</button>
+
+
+
+
+    <script>
+
+        let A = false
+
+        function Traducir() {
+            texto = document.getElementById("texto")
+            console.log("boton pulsado");
+            if (A == false) {
+                texto.textContent = "El primer botón traducirá el texto de un párrafo específico: sustituirá el contenido por la versión en el otro idioma. Debe funcionar en ambos sentidos. Es decir, si el texto está en el idioma A, lo pasará en el B, y si está en el idioma B, lo pasará en el A."
+                A = true
+            } else {
+                texto.textContent = "El primer botó traduirà el text d'un paràgraf específic: substituirà el contingut per la versió en l'altre idioma. Ha de funcionar en ambdós sentits. És a dir, si el text està en l'idioma A, el passarà al B, i si està en l'idioma B, el passarà a l'A."
+                A = false
+            }
+
+        }
+
+        let boton_color = document.getElementById("boton_color")
+        function Cambiar_color_boton() {
+            boton_color.style.color = "blue"
+        }
+
+        let boton = document.getElementById("boton_traduccion")
+        boton.addEventListener("click", Traducir)
+
+        boton.addEventListener("mouseover", Cambiar_color_boton)
+
+
+    </script>
+</body>
+
+</html>
