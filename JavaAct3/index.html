@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Actividad21</title>
+</head>
+<body>
+   
+    <div id="main"></div>
+    <button onclick="Añadir()">Añadir Texto</button>
+    <button onclick="Borrar()">Borrar Texto</button>
+
+<script>
+    function Añadir() {
+        let p_nuevo = document.createElement("p");
+        p_nuevo.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.";
+        let div_padre = document.getElementById("main");
+        div_padre.appendChild(p_nuevo);
+        ultimo_parrafo = document.querySelector("p")
+        
+}
+    function Borrar() {
+        ultimo_parrafo.remove();
+        ultimo_parrafo = document.querySelector("p")
+    }
+</script>
+</body>
+</html>
