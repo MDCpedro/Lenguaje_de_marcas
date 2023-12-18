@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
     <title>Actividad21</title>
 </head>
 
@@ -37,15 +36,21 @@
 
         }
 
-        let boton_color = document.getElementById("boton_color")
+       
         function Cambiar_color_boton() {
             boton_color.style.color = "blue"
         }
 
-        let boton = document.getElementById("boton_traduccion")
-        boton.addEventListener("click", Traducir)
+        function Devolver_color_boton() {
+            boton_color.style.color = "black"
+        }
 
-        boton.addEventListener("mouseover", Cambiar_color_boton)
+        let boton_color = document.getElementById("boton_color")
+        let boton = document.getElementById("boton_traduccion")
+        
+        boton.addEventListener("click", Traducir)
+        boton_color.addEventListener("mouseover", Cambiar_color_boton)
+        boton_color.addEventListener("mouseleave", Devolver_color_boton)
 
 
     </script>
