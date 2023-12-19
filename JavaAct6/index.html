@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 26</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <p>Blanco</p>
+    <p>Azul</p>
+    <p>Morado</p>
+    <p>Rojo</p>
+    <p>Amarillo</p>
+    <p>Verde</p>
+
+    <script>
+        let paragrafo = document.querySelectorAll("p")
+
+        paragrafo.forEach((paragrafo) => {
+            if (paragrafo.textContent == "Rojo") {
+                paragrafo.classList.add("color_rojo")
+                paragrafo.addEventListener("click", alerta)
+            }
+        })
+
+        function alerta() {
+            alert("Se ha seleccionado el paragrafo")
+        }
+    </script>
+</body>
+</html>
