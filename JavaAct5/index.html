@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad25</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <p>HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+    <button id="boton_centrar">CENTRAR</button>
+    <button id="boton_descentrar">DESCENTRAR</button>
+
+    <script>
+        let cuerpo = document.querySelector("body")
+        let botoncentro = document.getElementById("boton_centrar")
+        let botondescentro = document.getElementById("boton_descentrar")
+
+        function centrar_body() {
+            cuerpo.classList.add("centrado")
+        }
+
+        function descentrar_body() {
+            cuerpo.classList.remove("centrado")
+        }
+
+        botoncentro.addEventListener("click", centrar_body)
+        botondescentro.addEventListener("click", descentrar_body)
+
+    </script>
+</body>
+</html>
