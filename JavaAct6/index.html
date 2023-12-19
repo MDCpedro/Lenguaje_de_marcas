@@ -18,12 +18,14 @@
         let paragrafo = document.querySelectorAll("p")
 
         paragrafo.forEach((paragrafo) => {
-            if (paragrafo.textContent == "Rojo") {
+            let cantidad_car = paragrafo.textContent.length
+
+            if (paragrafo.textContent == "Rojo" || cantidad_car > 5) {
                 paragrafo.classList.add("color_rojo")
                 paragrafo.addEventListener("click", alerta)
             }
         })
-
+ 
         function alerta() {
             alert("Se ha seleccionado el paragrafo")
         }
