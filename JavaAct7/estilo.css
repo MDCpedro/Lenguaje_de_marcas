@@ -225,16 +225,21 @@ a {
     text-decoration: none;
 }
 
+.space_around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.space_between {
+    justify-content: space-between;
+}
 
 .display_none {
     display: none;
-    content: ""
 }
 
 @media screen and (max-width: 1024px) and (min-width: 430px) {
-    .Header_Tablet {
-        display: none;
-    }
+   
     .Menu::after {
         content: "☰";
         font-size: 40px;
@@ -260,9 +265,7 @@ a {
 }
 
 @media screen and (max-width: 430px) {
-    .Header_Tablet {
-        display: none;
-    }
+    
     .formMovil {
         display: none;
     }
