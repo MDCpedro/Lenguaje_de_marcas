@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 27</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div>
+        <h1>Lista de tareas</h1>
+        <h2>Escribe y añade tus tareas aquí.</h2>
+        <input type="text" id="campo_texto" size="50" />
+        <input type="button" id="boton_añadir" value="Añadir Tarea">
+    </div>
+    <div id="lista" class="lista">
+        <h2>Tareas actuales:</h2>
+    </div>
+
+    <script>
+        let boton_añadir = document.getElementById("boton_añadir")
+        let lista = document.getElementById("lista")
+        let campo_texto = document.getElementById("campo_texto")
+
+        function añadir_tarea() {
+            let texto = document.getElementById("campo_texto").value;
+            let nueva_tarea = document.createElement("p")
+            let boton_tarea_hecha = document.createElement("button")
+            nueva_tarea.textContent = texto
+            if (texto == "") {
+                alert("No has introducido el nombre de la tarea.")
+            } else 
+                {lista.appendChild(nueva_tarea)
+                boton_tarea_hecha.textContent = "Hecho"
+                lista.appendChild(boton_tarea_hecha)
+                campo_texto.value = ""
+                }
+            
+        }
+
+        boton_añadir.addEventListener("click", añadir_tarea)
+
+
+    </script>
+
+</body>
+</html>
