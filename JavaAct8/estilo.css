@@ -5,3 +5,7 @@ p {
 .lista {
     width: 800px;
 }
+
+.completado {
+    background-color: lightgreen;
+}
