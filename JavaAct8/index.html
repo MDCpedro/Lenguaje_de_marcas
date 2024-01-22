@@ -22,24 +22,49 @@
         let lista = document.getElementById("lista")
         let campo_texto = document.getElementById("campo_texto")
 
+
         function añadir_tarea() {
             let texto = document.getElementById("campo_texto").value;
             let nueva_tarea = document.createElement("p")
             let boton_tarea_hecha = document.createElement("button")
+            let boton_eliminar = document.createElement("button")
+            boton_tarea_hecha.textContent = "Hecho"
+            boton_eliminar.textContent = "Eliminar"
             nueva_tarea.textContent = texto
+
             if (texto == "") {
                 alert("No has introducido el nombre de la tarea.")
             } else 
                 {lista.appendChild(nueva_tarea)
-                boton_tarea_hecha.textContent = "Hecho"
                 lista.appendChild(boton_tarea_hecha)
+                lista.appendChild(boton_eliminar)
                 campo_texto.value = ""
+<<<<<<< HEAD
                 
+=======
+                boton_tarea_hecha.addEventListener("click", completar_tarea)
+                boton_eliminar.addEventListener("click", eliminar_tarea)
+>>>>>>> d6969542373a99e9f18277a248e5be34f12e6a49
                 }
             
         }
 
+        function completar_tarea() {
+           let ultima_tarea = this.previousElementSibling;
+           ultima_tarea.classList.toggle("completado")
+        }
+
+        function eliminar_tarea() {
+            let eliminar_ultima_tarea = this.previousElementSibling.previousElementSibling;
+            lista.removeChild(eliminar_ultima_tarea);
+            lista.removeChild(this.previousElementSibling);
+            lista.removeChild(this);
+        }
+
         boton_añadir.addEventListener("click", añadir_tarea)
+
+        // No tengo ni idea de como hacer el filtro perdon XD
+        
 
 
     </script>
