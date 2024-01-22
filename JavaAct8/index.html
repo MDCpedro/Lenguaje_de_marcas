@@ -24,7 +24,7 @@
 
 
         function añadir_tarea() {
-            let texto = document.getElementById("campo_texto").value;
+            let texto = document.getElementById("campo_texto").value
             let nueva_tarea = document.createElement("p")
             let boton_tarea_hecha = document.createElement("button")
             let boton_eliminar = document.createElement("button")
@@ -39,12 +39,8 @@
                 lista.appendChild(boton_tarea_hecha)
                 lista.appendChild(boton_eliminar)
                 campo_texto.value = ""
-<<<<<<< HEAD
-                
-=======
                 boton_tarea_hecha.addEventListener("click", completar_tarea)
                 boton_eliminar.addEventListener("click", eliminar_tarea)
->>>>>>> d6969542373a99e9f18277a248e5be34f12e6a49
                 }
             
         }
@@ -56,14 +52,25 @@
 
         function eliminar_tarea() {
             let eliminar_ultima_tarea = this.previousElementSibling.previousElementSibling;
-            lista.removeChild(eliminar_ultima_tarea);
-            lista.removeChild(this.previousElementSibling);
-            lista.removeChild(this);
+            lista.removeChild(eliminar_ultima_tarea)
+            lista.removeChild(this.previousElementSibling)
+            lista.removeChild(this)
         }
 
+        function filtrar_hechas() {
+            let tareas = document.querySelectorAll("p")
+            for (let i = 0; i < tareas.length; i++) {
+                if (tareas[i].classList.contains("completado")) {
+                    tareas[i].style.display = "none";
+                } else {
+                    tareas[i].style.display = "block";
+                }
+            }
+        }
+        
         boton_añadir.addEventListener("click", añadir_tarea)
 
-        // No tengo ni idea de como hacer el filtro perdon XD
+        
         
 
 
