@@ -9,3 +9,7 @@ p {
 .completado {
     background-color: lightgreen;
 }
+
+body {
+    font-family: system-ui;
+}

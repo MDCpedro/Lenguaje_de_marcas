@@ -12,6 +12,9 @@
         <h2>Escribe y añade tus tareas aquí.</h2>
         <input type="text" id="campo_texto" size="50" />
         <input type="button" id="boton_añadir" value="Añadir Tarea">
+        <input type="button" id="boton_filtrar_NOhechas" value="Ver tareas no hechas">
+        <input type="button" id="boton_filtrar_hechas" value="Ver tareas hechas">
+        <input type="button" id="boton_filtrar_todas" value="Ver todas las tareas">
     </div>
     <div id="lista" class="lista">
         <h2>Tareas actuales:</h2>
@@ -21,6 +24,9 @@
         let boton_añadir = document.getElementById("boton_añadir")
         let lista = document.getElementById("lista")
         let campo_texto = document.getElementById("campo_texto")
+        let boton_filtrar_NOhechas = document.getElementById("boton_filtrar_NOhechas")
+        let boton_filtrar_hechas = document.getElementById("boton_filtrar_hechas")
+        let boton_filtrar_todas = document.getElementById("boton_filtrar_todas")
 
 
         function añadir_tarea() {
@@ -28,6 +34,8 @@
             let nueva_tarea = document.createElement("p")
             let boton_tarea_hecha = document.createElement("button")
             let boton_eliminar = document.createElement("button")
+            
+
             boton_tarea_hecha.textContent = "Hecho"
             boton_eliminar.textContent = "Eliminar"
             nueva_tarea.textContent = texto
@@ -57,20 +65,41 @@
             lista.removeChild(this)
         }
 
-        function filtrar_hechas() {
+        function filtrar_NOhechas() {
             let tareas = document.querySelectorAll("p")
             for (let i = 0; i < tareas.length; i++) {
                 if (tareas[i].classList.contains("completado")) {
                     tareas[i].style.display = "none";
+                    
                 } else {
                     tareas[i].style.display = "block";
                 }
             }
         }
+
+        function filtrar_hechas() {
+            tareas = document.querySelectorAll("p")
+            for (let i = 0; i < tareas.length; i++) {
+                if (tareas[i].classList.contains("completado")) {
+                    tareas[i].style.display = "block";
+                } else {
+                    tareas[i].style.display = "none";
+                }
+            }
+        }
+
+        function filtrar_todas() {
+            for (let i = 0; i < tareas.length; i++) {
+                tareas[i].style.display = "block"
+            }
+            
+
+        }
         
         boton_añadir.addEventListener("click", añadir_tarea)
-
-        
+        boton_filtrar_NOhechas.addEventListener("click", filtrar_NOhechas)
+        boton_filtrar_hechas.addEventListener("click", filtrar_hechas)
+        boton_filtrar_todas.addEventListener("click", filtrar_todas)
         
 
 
