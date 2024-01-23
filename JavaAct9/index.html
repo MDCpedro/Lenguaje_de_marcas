@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Actividad 28</title>
+</head>
+<body>
+    <main class="columna">
+        <div class="display_flex flex_columna padding_columna">
+            <h1>Blog</h1>
+            <h2>Articulo 1</h2>
+            <p>Para potenciar la interactividad y dinamismo en tu sitio web,
+                jQuery emerge como una herramienta invaluable. Este framework
+                de JavaScript simplifica la manipulación del DOM, facilitando 
+                la creación de animaciones fluidas, efectos visuales cautivadores
+                y la gestión eficiente de eventos. Con una sintaxis sencilla
+                y poderosas funciones, jQuery permite a los desarrolladores realizar 
+                tareas comunes de manera rápida y eficaz</p>
+            <h2>Articulo 2</h2>
+            <p>Además, su compatibilidad con múltiples navegadores asegura una 
+                experiencia uniforme para los usuarios. Desde la creación de galerías 
+                de imágenes hasta la carga dinámica de contenido, jQuery se erige como 
+                una herramienta esencial para optimizar la experiencia del usuario y dotar 
+                a tu sitio web con una funcionalidad excepcional. ¡Descubre cómo jQuery 
+                puede potenciar tu presencia en línea y llevar la interactividad de tu página a nuevos niveles!</p>
+        </div>
+
+        <div class="padding_columna display_flex flex_columna flex_alinear">
+            <h2>Comentarios</h2>
+            <img id="boton_comentarios" class="icono_comentarios " src="comentar-alt-puntos.png">
+        </div>
+
+        <div class="padding_columna">
+            <hr class="linea_hr">
+            <h4>Comenta:</h4>
+            <input class="escribir_comentario" type="text"/>
+            <input id="boton_comentar" type="button" value="Comentar">
+            <hr class="linea_hr">
+        </div>
+
+        <div id="seccion_comentarios" class="llegar_fondo none"></div>
+
+        <script>
+            $(document).ready(function(){
+        $("#boton_comentarios").click(function(){
+            $("#seccion_comentarios").toggle();
+        $("")
+        })});
+
+        </script>
+    </main>
+</body>
+</html>
