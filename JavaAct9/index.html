@@ -54,9 +54,10 @@
                 $("#boton_comentar").click(function () {
                     let contenido = $("#cuadro-comentario").val()
                     let elemento = "<div class=padding_columna comentario><p>" + contenido + "</p><input class=boton_borrar_comentario type=button value=Borrar></div>"
-
-                    $("#seccion_comentarios").append(elemento)
-                    $("#cuadro-comentario").val("")
+                    if (contenido == "") {
+                        alert("No has escrito nada")
+                    } else {$("#seccion_comentarios").append(elemento)
+                    $("#cuadro-comentario").val("")}
                     $(elemento).ready(function () {
                         $(".boton_borrar_comentario").click(function () {
                             $(this).parent().remove();
