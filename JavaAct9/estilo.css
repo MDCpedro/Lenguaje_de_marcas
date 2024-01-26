@@ -58,3 +58,7 @@ body {
     display: none;
 }
 
+.comentario {
+    background-color: rgba(250, 235, 215, 0.822);
+    margin-top: 20px;
+}
