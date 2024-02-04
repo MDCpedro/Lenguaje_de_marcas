@@ -15,11 +15,18 @@ body {
 
 .recuadro_widgets {
     border-radius: 10px;
-    height: 100px;
     border: 1px solid #a0b6bd;
     background: rgb(51,93,106);
     background: linear-gradient(0deg, rgba(101, 159, 177, 0.9) 0%, rgba(110,144,159,0.9) 52%, rgba(121,180,213,0.9) 100%);
     padding: 25px;
+}
+
+.altura_buscador {
+    height: 200px;
+}
+
+.altura_slider {
+    height: 150px;
 }
 
 .viaje {
