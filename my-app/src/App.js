@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import TodoList from './componentes/TodoList';
+import CuadroTexto from './componentes/TodoCuadroTexto';
 
 function App() {
   return (
@@ -8,8 +9,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         Tu lista de tareas.
         </p>
+
+        <CuadroTexto class="cuadrotexto"></CuadroTexto>
         <TodoList></TodoList>
       </header>
     </div>
