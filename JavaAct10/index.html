@@ -4,19 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <title>Actividad 30</title>
 </head>
-<body>
-    <header>
-        <h1>Reserva tu viaje</h1>
-    </header>
+<body class="flex centrar imagen_fondo">
     <div>
-        <h2>Viajes disponibles:</h2>
+        <div class="recuadro_widgets margenes_arriba altura_buscador">
+            <h3>Salida:</h3>
+            <input type="text" id="buscar_destino" placeholder="Salida">
+            <h3>Destino:</h3>
+            <input type="text" id="buscar_destino2" placeholder="Destino">
+        </div>
+
+        <div class="recuadro_widgets margenes_arriba altura_slider">
+            <h3>Indica tu presupuesto</h3>
+            <p id="valor_presupuesto">Aqui se muestra el presupuesto</p>
+            <div id="slider_precio"></div>
+        </div>
     </div>
-    <div>
-        <h4>Valencia</h4>
-        <p>200 €</p>
+    
+    <div class="recuadro margenes tamaño flex flex_columna margenes_arriba">
+        <header>
+            <h1>Reserva tu viaje</h1>
+        </header>
+        <div>
+            <div>
+                <h2>Viajes disponibles:</h2>
+            </div>
+            <div class="viaje">
+                <h4>Valencia - Mallorca</h4>
+                <p>Precio: 60 €</p>
+                <p>Salida 8:00 AM | Llegada 9:00 AM</p>
+            </div>
+            <div class="viaje">
+                <h4>Madrid - Andorra</h4>
+                <p>Precio: 120 €</p>
+                <p>Salida 12:00 AM | Llegada 14:00 PM</p>
+            </div>
+            <div class="viaje">
+                <h4>Paris - Nueva York</h4>
+                <p>Precio: 500 €</p>
+                <p>Salida 23:00 PM | Llegada 9:00 AM</p>
+            </div>
+            <div class="viaje">
+                <h4>Mallorca - Bali</h4>
+                <p>Precio: 700 €</p>
+                <p>Salida 3:00 AM | Llegada 13:00 PM</p>
+            </div>
+            <div class="viaje">
+                <h4>Nueva York</h4>
+                <p>Precio: 1200 €</p>
+                <p>BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+            </div>
+        </div>
     </div>
+    <div class="recuadro_widgets margenes_arriba altura_slider">
+        <h3>Indica la fecha de tu viaje</h3>
+        <input type="text" id="fecha_inicio" placeholder="Fecha de inicio">
+        <input type="text" id="fecha_fin" placeholder="Fecha de fin">
+    </div>
+    
+    <script>
+
+        let destinos = ["Valencia", "Paris", "Madrid", "Bali", "Nueva York", "Mallorca" , "Andorra"]
+
+        $(document).ready(function(){
+            $("#fecha_inicio").datepicker({
+                minDate: 0,
+                onSelect: function (selectedDate) {
+                    $("#fecha_fin").datepicker("option", "minDate", selectedDate);
+                 }
+            });
+            $("#fecha_fin").datepicker({
+                minDate: 1,
+            });
+            $("#slider_precio").slider({
+                range: true,
+                min: 1,
+                max: 1200,
+                slide: function(event, ui) {
+                    $("#valor_presupuesto").text(ui.values[0] + "€ - " + ui.values[1] + "€");
+                }
+            });
+            $("#valor_presupuesto").text($("#slider_precio").slider("values", 0) + " - " + $("#slider_precio").slider("values", 1));
+
+            $("#buscar_destino, #buscar_destino2").autocomplete({
+                source: destinos,
+
+            })
+        });
+    </script>
     
 </body>
 </html>
