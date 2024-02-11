@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import TodoList from './componentes/TodoList';
-import CuadroTexto from './componentes/TodoCuadroTexto';
-
+import React from 'react';
+import TodoList from './componentes/TodoList'
 function App() {
   return (
     <div className="App">
@@ -11,9 +10,8 @@ function App() {
         <p>
          Tu lista de tareas.
         </p>
-
-        <CuadroTexto class="cuadrotexto"></CuadroTexto>
         <TodoList></TodoList>
+
       </header>
     </div>
   );

@@ -1,25 +1,38 @@
 import React from "react";
-import TodoItem from "./Todoitem";
-import { Button } from "react-bootstrap";
+import { useState } from "react";
 
+function ListaDeTareas() {
+    const [tareas, setTareas] = useState([""]);
+    const [TareaNueva, setTareaNueva] = useState('');
 
-function TodoList() {
-    const [tasks, setTask] = React.useState(["Tasca 1", "Tasca 2"]);
+    const nueva_tarea = () => {
+        setTareas ([...tareas, TareaNueva]);
+    
+    };
 
-    function addTask() {
-        setTask(currentTasks => [...currentTasks, "Nueva tarea"])
-    }
+    const eliminar_tarea = (index) => {
+        const nuevas_tareas = [...tareas]
+        nuevas_tareas.splice(index,1);
+        setTareas(nuevas_tareas)
+    };
 
     return (
         <div>
-            <h2>Mi lista de tareas</h2>
-            <ul>
-                {tasks.map((task, index) => (
-                   <TodoItem key={index} content={task} />
-                ))}
-            </ul>
-            <Button variant="success" onClick={() => addTask("Nueva ")}>Añadir tarea</Button>
+            <h1>Lista de tareas</h1>
+            <h2>Escribe aqui tus tareas</h2>
+            <input type="text" value={TareaNueva} onChange={(e)=>setTareaNueva(e.target.value)}></input>
+            <button onClick={nueva_tarea}>Añadir Tarea</button>
+        <ul>
+            {tareas.map((tarea, index) => (
+            <li key={index}>
+                {tarea}
+                <button onClick={() => eliminar_tarea(index)}>Eliminar</button>
+            </li>
+        ))}
+      </ul>
         </div>
+        
     );
-}
-export default TodoList;
+};
+
+export default ListaDeTareas;
