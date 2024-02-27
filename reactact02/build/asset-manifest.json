@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/static/css/main.69a28534.css",
+    "main.js": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/static/js/main.b4473b8d.js",
+    "static/js/453.b7080d17.chunk.js": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/static/js/453.b7080d17.chunk.js",
+    "static/media/skyline.jpeg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/static/media/skyline.1454586eb1b2852bda40.jpeg",
+    "static/media/FORD.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/static/media/FORD.68cb08ad91d67067628a.jpg",
+    "static/media/BMW.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/static/media/BMW.443ab9a9de80875d4ff0.jpg",
+    "index.html": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/index.html",
+    "main.69a28534.css.map": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/static/css/main.69a28534.css.map",
+    "main.b4473b8d.js.map": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/static/js/main.b4473b8d.js.map",
+    "453.b7080d17.chunk.js.map": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact02/build/static/js/453.b7080d17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69a28534.css",
+    "static/js/main.b4473b8d.js"
+  ]
+}

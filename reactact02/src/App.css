@@ -37,14 +37,24 @@
   }
 }
 
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 tr {
-  border: 1px solid black;
+  border: 0.5px solid black;
+  height: 10px;
 }
 
 td {
-  border: 1px solid black;
+  border: 0.5px solid rgb(150, 150, 150);
+  border-radius: 3px;
+  width: 100px;
+
 }
 
 img {
-  width: 200px;
+  width: 250px;
 }

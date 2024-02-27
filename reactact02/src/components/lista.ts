@@ -1,4 +1,7 @@
 import skyline from "../imagenes/skyline.jpeg"
+import toyota from "../imagenes/toyota.jpg"
+import BMW from "../imagenes/BMW.jpg"
+import FORD from "../imagenes/FORD.jpg"
 export const filas = [
     {
         marca: "Nissan",
@@ -14,31 +17,31 @@ export const filas = [
         marca: "Toyota",
         modelo: "Supra",
         precio: "80000",
-        color: "Rojo",
+        color: "Lila",
         año: "2014",
         kilometraje: "20000",
         comprado: false,
-        imagen: "reactact02\\imagenes\\toyota.jpg"
+        imagen: toyota
     },
     {
         marca: "BMW",
         modelo: "M3",
         precio: "85000",
-        color: "Negro",
+        color: "Blanco",
         año: "2013",
         kilometraje: "30000",
         comprado: false,
-        imagen: "..."
+        imagen: BMW
     },
     {
         marca: "Ford",
         modelo: "Mustang",
         precio: "70000",
-        color: "Amarillo",
+        color: "Azul",
         año: "2012",
         kilometraje: "40000",
         comprado: false,
-        imagen: "..."
+        imagen: FORD
     }
 
 ]
