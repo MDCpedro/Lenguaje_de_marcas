@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Sitios_de_interes from './components/SitiosInteres';
 import './App.css';
 import Navbar from './components/navBar';
 import BarraNav from './components/navBar';

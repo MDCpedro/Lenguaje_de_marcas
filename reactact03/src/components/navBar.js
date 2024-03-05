@@ -10,7 +10,9 @@ function BarraNav() {
             <Navbar.Brand href="\SitiosInteres.tsx">Navbar</Navbar.Brand> 
           </Container>
         <BrowserRouter>
+          <Routes>
           <Route path="\SitiosInteres.tsx"></Route>
+          </Routes>
         </BrowserRouter>
         </Navbar>
 

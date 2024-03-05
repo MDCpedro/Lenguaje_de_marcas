@@ -7,3 +7,5 @@ function Sitios_de_interes() {
         </body>
     )
 }
+
+export default Sitios_de_interes;
