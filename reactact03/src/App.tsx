@@ -1,26 +1,28 @@
 import React from 'react';
-import Sitios_de_interes from './components/SitiosInteres';
 import './App.css';
-import Navbar from './components/navBar';
-import BarraNav from './components/navBar';
+import Navbar from './components/BarraNav';
+import BarraNav from './components/BarraNav';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Inicio from './views/inicio';
+import Sitios_interes from './views/sitios_de_interes';
+import Hoteles from './views/hoteles';
+import Restaurantes from './views/restaurantes';
+import Actividades from './views/actividades';
+
 function App() {
   return (
     <body>
       <Navbar/>
-      <div>
-        <h2>Bienvenido a Roma. </h2>
-        <h4>La capital de Italia.</h4>
-        <div>
-          <p>Roma, la capital de Italia, es una extensa ciudad 
-            cosmopolita que tiene a la vista casi 3,000 años de arte, 
-            arquitectura y cultura de influencia mundial. Las ruinas 
-            antiguas como las del Foro y el Coliseo evocan el poder 
-            del antiguo Imperio Romano. La ciudad del Vaticano, sede 
-            central de la Iglesia católica romana, cuenta con la Basílica 
-            de San Pedro y los Museos del Vaticano, que albergan obras 
-            maestras como los frescos de la Capilla Sixtina de Miguel Ángel.</p>
-        </div>
-      </div>
+      <BrowserRouter>
+          <Routes>
+          <Route index Component={Inicio}></Route>
+          <Route path="/views/inicio.tsx" Component={Inicio}></Route>
+          <Route path="/views/sitios_de_interes.tsx" Component={Sitios_interes}></Route>
+          <Route path="/views/hoteles.tsx" Component={Hoteles}></Route>
+          <Route path="/views/restaurantes.tsx" Component={Restaurantes}></Route>
+          <Route path="/views/actividades.tsx" Component={Actividades}></Route>
+          </Routes>
+      </BrowserRouter>
     </body>
   );
 }
