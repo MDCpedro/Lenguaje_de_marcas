@@ -2,16 +2,20 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import Roma from '../imagenes/Roma.jpg';
 function Inicio() {
     return (
+        <body className="fondo blanca">
         <Container>
         <Row>
+            <h2 className='centrar'>Bienvenido a Roma. </h2>
+            <h4 className='centrar'>La capital de Italia.</h4>
+        </Row>
+        <Row>
             <Col>
-                <h2>Bienvenido a Roma. </h2>
-            <h4>La capital de Italia.</h4>
+                <img src={Roma}/>
             </Col>
-            <Col>
+            <Col xs={6}>
             <div>
                 <p>Roma, la capital de Italia, es una extensa ciudad
                     cosmopolita que tiene a la vista casi 3,000 años de arte,
@@ -24,7 +28,9 @@ function Inicio() {
             </div>
             </Col>
         </Row>
+        
         </Container>
+        </body>
     )
 }
 

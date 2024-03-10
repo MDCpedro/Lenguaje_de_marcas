@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.negra {
+  color: black;
+}
+.blanca {
+  color: white;
+}
+.centrar {
+  text-align: center;
+}
+.fondo {
+  background-image: url('imagenes/Roma1.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  height: 100%;
+}
+
+.margen_0 {
+  margin: 0px;
+}

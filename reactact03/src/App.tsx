@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/BarraNav';
-import BarraNav from './components/BarraNav';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Inicio from './views/inicio';
 import Sitios_interes from './views/sitios_de_interes';
