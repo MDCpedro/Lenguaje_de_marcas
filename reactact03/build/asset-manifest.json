@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/css/main.b485ae20.css",
+    "main.js": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/js/main.ba04da69.js",
+    "static/js/453.4a983e69.chunk.js": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/js/453.4a983e69.chunk.js",
+    "static/media/act2.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/act2.6ba4a3a2d9a97184e64b.jpg",
+    "static/media/coliseo.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/coliseo.0d844881d8a5d657cca4.jpg",
+    "static/media/fontana.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/fontana.834757803e8fb2092d64.jpg",
+    "static/media/hotel3.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/hotel3.c91676b531bcdf20100d.jpg",
+    "static/media/Roma.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/Roma.8e523f833dedd013fb29.jpg",
+    "static/media/hotel2.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/hotel2.e9806fae2b8d488fb709.jpg",
+    "static/media/act1.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/act1.469416254c7cab25fe1f.jpg",
+    "static/media/restaurante1.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/restaurante1.c2e58aaf74fa22ea14ea.jpg",
+    "static/media/hotel1.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/hotel1.b3ee3748705bafe2098f.jpg",
+    "static/media/act3.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/act3.5de3b1c29923add69810.jpg",
+    "static/media/restaurante3.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/restaurante3.0c723bdd82dc172ced7c.jpg",
+    "static/media/templo.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/templo.c5c7b24038a1688945b7.jpg",
+    "static/media/Roma1.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/Roma1.c1764b0d2cf1965ba66c.jpg",
+    "static/media/restaurante2.jpg": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/media/restaurante2.07361a13d0cbf216585f.jpg",
+    "index.html": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/index.html",
+    "main.b485ae20.css.map": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/css/main.b485ae20.css.map",
+    "main.ba04da69.js.map": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/js/main.ba04da69.js.map",
+    "453.4a983e69.chunk.js.map": "https://mdcpedro.github.io/Lenguaje_de_marcas/reactact03/build/static/js/453.4a983e69.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b485ae20.css",
+    "static/js/main.ba04da69.js"
+  ]
+}

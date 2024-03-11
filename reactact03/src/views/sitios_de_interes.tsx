@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import coliseo from '../imagenes/coliseo.jpg';
 import fontana from '../imagenes/fontana.jpg'
 import templo from '../imagenes/templo.jpg';
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Image } from "react-bootstrap";
 function Sitios_interes() {
     return (
     <body className="fondo">
@@ -14,11 +14,12 @@ function Sitios_interes() {
         <Row>
         <Carousel>
             <Carousel.Item>
-                <img
+                
+                {<img
                     className="d-block w-100"
-                    src={coliseo}
+                    src={coliseo} 
                     alt="First slide"
-                />
+                />}
                 <Carousel.Caption>
                     <h3 className="negra">Coliseo </h3>
                     <p className="negra">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
