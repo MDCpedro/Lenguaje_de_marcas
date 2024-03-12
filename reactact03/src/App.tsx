@@ -11,16 +11,16 @@ import Actividades from './views/actividades';
 function App() {
   return (
     <body>
-      <Navbar/>
       <BrowserRouter>
-          <Routes>
+        <Navbar />
+        <Routes>
           <Route index Component={Inicio}></Route>
-          <Route path="/views/inicio.tsx" Component={Inicio}></Route>
-          <Route path="/views/sitios_de_interes.tsx" Component={Sitios_interes}></Route>
-          <Route path="/views/hoteles.tsx" Component={Hoteles}></Route>
-          <Route path="/views/restaurantes.tsx" Component={Restaurantes}></Route>
-          <Route path="/views/actividades.tsx" Component={Actividades}></Route>
-          </Routes>
+          <Route path="inicio" Component={Inicio}></Route>
+          <Route path="sitios_de_interes" Component={Sitios_interes}></Route>
+          <Route path="hoteles" Component={Hoteles}></Route>
+          <Route path="restaurantes" Component={Restaurantes}></Route>
+          <Route path="actividades" Component={Actividades}></Route>
+        </Routes>
       </BrowserRouter>
     </body>
   );
