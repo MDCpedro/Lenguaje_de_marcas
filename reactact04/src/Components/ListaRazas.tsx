@@ -1,5 +1,5 @@
 import React from "react";
-
+import usarFetch from "./usarFetch";
 export type Breeds = Breed[]
 
 export interface Breed {
@@ -55,24 +55,23 @@ export interface Image {
   url: string
 }
 
-
-
 export default function Razas() {
-    const [razas, setRazas] = React.useState([] as Breeds);
-
-    React.useEffect(() => {
-        fetch("https://api.thedogapi.com/v1/breeds", {
-          headers: {
-            "x-api-key": "123456"
-          },
-        })
-        .then((response) => response.json())
-        .then((data: Breeds) => {
-            setRazas(data);
-        });
-    }, []);
-    return <>{razas.map((raza, i) => {
-      return <p key={i}>{raza.name}</p>
     
-    })}</>
+    const {data} = usarFetch("https://api.thedogapi.com/v1/breeds")
+    return (
+        
+      <>
+    <div>
+      <ul className="card">
+          {razas.map((raza, i) => (<li key={i}>{raza.name}</li>))}
+      </ul>
+    </div>
+          {razas.map((raza, i) => (
+              <p key={i}>
+                
+              </p>
+          ))}
+      </>
+      
+  );
 }
