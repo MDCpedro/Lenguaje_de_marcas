@@ -1,5 +1,5 @@
 import React from "react";
-import usarFetch from "./usarFetch";
+import { usarFetch } from "./usarFetch";
 export type Breeds = Breed[]
 
 export interface Breed {
@@ -63,10 +63,10 @@ export default function Razas() {
       <>
     <div>
       <ul className="card">
-          {razas.map((raza, i) => (<li key={i}>{raza.name}</li>))}
+          {data.map((raza, i) => (<li key={i}>{raza.name}</li>))}
       </ul>
     </div>
-          {razas.map((raza, i) => (
+          {raza.map((raza, i) => (
               <p key={i}>
                 
               </p>
